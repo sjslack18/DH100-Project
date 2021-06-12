@@ -12,6 +12,10 @@ Characterize the language of white house press briefings throughout recent histo
 American Presidency Project website: https://www.presidency.ucsb.edu/
 This is a UCSB archive that has press briefings dating back to the Clinton administration
 
+### Dataset
+The scraped data can be found here on google drive:
+https://drive.google.com/file/d/1vdDhpRGoJ0lzeul6iuqZiPwQyvambveU/view?usp=sharing
+
 ### Scraping
 Web scraping is done using some assistance/ inspiration from kshaffer’s github page specifically on scraping from this site (which does not appear to have a public or easily findable API): https://github.com/kshaffer/presidencyproject/blob/master/presidency_project.Rmd
 Using the search results of all press briefings, each page was scraped for links to individual briefings and the links were compiled into a dataset. Then, using a modified version of kshaffer’s “deglaze” function, the links were scraped for the raw text that they contained, as well as title and date in R’s datetime format. 
